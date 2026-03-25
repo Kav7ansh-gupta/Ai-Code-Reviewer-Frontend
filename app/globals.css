@@ -1,0 +1,23 @@
+@import "tailwindcss";
+body {
+  background: #020024;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(90, 151, 163, 1) 53%,
+    rgba(9, 9, 121, 1) 100%
+  );
+}
+
+.TextArea {
+  scrollbar-width: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+/* pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+} */
