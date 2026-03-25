@@ -3,8 +3,8 @@ body {
   background: #020024;
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(90, 151, 163, 1) 53%,
+    rgb(6, 1, 88) 0%,
+    rgb(0, 94, 112) 53%,
     rgba(9, 9, 121, 1) 100%
   );
 }
@@ -15,4 +15,3 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
-
