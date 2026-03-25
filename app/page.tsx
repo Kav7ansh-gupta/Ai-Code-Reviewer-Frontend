@@ -3,7 +3,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL ;
+const API_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export default function Home() {
   const [code, setCode] = useState("");
@@ -43,11 +43,11 @@ export default function Home() {
       <h1 className="text-center text-4xl font-black text-blue-200">
         AI Code Reviewer
       </h1>
-      <div className="flex items-center h-[94vh] p-8 gap-10">
-        <div className="border-2 resize-none w-1/2 h-full overflow-scroll p-5 rounded-2xl text-white bg-white/20 backdrop-blur-2xl TextArea">
+      <div className="flex md:flex-row flex-col items-center md:h-[94vh] p-8  gap-10">
+        <div className="border-2 resize-none md:w-1/2 w-full h-[85vh] md:h-full overflow-scroll p-5 rounded-2xl text-white bg-white/20 backdrop-blur-2xl TextArea">
           <select
             value={language}
-            className="absolute left-130 rounded top-2 h-7 bg-white/20 border focus:outline-none "
+            className="absolute md:left-130 left-55 rounded top-1 md:top-2 h-7 bg-white/20 border focus:outline-none "
             onChange={handleChange}
           >
             {" "}
@@ -69,7 +69,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="absolute bottom-11 left-135">
+        <div className="absolute md:bottom-11 md:left-135 bottom-3 left-60">
           <button
             className="bg-blue-400 border text-white rounded-3xl min-w-28 p-1.5 "
             onClick={analyzeCode}
@@ -77,7 +77,7 @@ export default function Home() {
             {loading ? "Analyzing..." : "Analyze Code"}
           </button>
         </div>
-        <div className="border-2 w-1/2 h-full overflow-y-scroll p-5 rounded-2xl bg-white/20 backdrop-blur-lg text-white TextArea">
+        <div className="border-2 md:w-1/2 w-full md:h-full h-[85vh] overflow-y-scroll p-5 rounded-2xl bg-white/20 backdrop-blur-lg text-white TextArea">
           {" "}
           {result.length > 1 ? (
             <pre className="">{result}</pre>
