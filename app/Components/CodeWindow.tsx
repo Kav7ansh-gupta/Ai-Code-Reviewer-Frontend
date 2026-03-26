@@ -49,7 +49,7 @@ const CodeWindow = () => {
         <h1 className="text-purple-400 md:hidden block text-3xl uppercase text-center m-3 font-extrabold ">
           Ai Code reviewer
         </h1>
-        <div className="bg-black w-full h-full p-1 rounded">
+        <div className="bg-black w-full md:h-full h-[89vh] p-1 rounded">
           <div className="bg-white/20 w-full h-full rounded">
             <header>
               <div className="h-15 w-full border-b-2 border-white py-2 px-5 flex items-center justify-between">
@@ -93,7 +93,7 @@ const CodeWindow = () => {
                 </div>
               </div>
             </header>
-            <div className="py-4 px-3 h-8/10 TextArea overflow-scroll text-white text-2xl ">
+            <div className="py-4 px-3 h-8/10 TextArea overflow-scroll text-white md:text-2xl text-lg">
               {screen ? (
                 <textarea
                   value={code}
