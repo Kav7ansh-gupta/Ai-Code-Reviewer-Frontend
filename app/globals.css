@@ -1,12 +1,6 @@
 @import "tailwindcss";
-body {
-  background: #020024;
-  background: linear-gradient(
-    90deg,
-    rgb(6, 1, 88) 0%,
-    rgb(0, 94, 112) 53%,
-    rgba(9, 9, 121, 1) 100%
-  );
+:root {
+  background: #000;
 }
 
 .TextArea {
